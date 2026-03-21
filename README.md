@@ -436,15 +436,55 @@ Follow the steps below to set up and run the Autonomous Workflow Bot locally.
 
 ---
 
-## 📥 Step 1 — Clone the Repository
+## ⚙️ Quick Start
 
-```bash
-git clone https://github.com/your-username/autonomous-workflow-bot.git
+Follow these steps to run the Autonomous Workflow Bot locally.
+
+---
+
+### 📥 Step 1 — Clone the Repository
+
+bash
+git clone https://github.com/hariompatidar7877/AI-Automation-Engineer-Research-Build-.git
 cd autonomous-workflow-bot
+
+---
+###📦 Step 2 — Create Virtual Environment
 python -m venv venv
+
+Activate environment:
+
+Windows
+
 venv\Scripts\activate
+
+Mac / Linux
+
 source venv/bin/activate
+
+--- 
+##📚 Step 3 — Install Dependencies
 pip install -r requirements.txt
+🗄 Step 4 — Initialize Sample Database
 python database/init_db.py
+
+This creates sample business tables:
+
+sales
+customers
+orders
+
+---
+##🚀 Step 5 — Start the Server
 python main.py
+
+Server will start at:
+
 http://127.0.0.1:8000
+
+---
+###📊 Step 6 — Open Swagger Interface
+
+Interactive API documentation available at:
+
+http://127.0.0.1:8000/docs
